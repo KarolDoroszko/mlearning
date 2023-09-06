@@ -44,7 +44,7 @@ def _arrow3D(ax, x, y, z, dx, dy, dz, *args, **kwargs):
 setattr(Axes3D, 'arrow3D', _arrow3D)
 
 class GradientDesc:
-    def __init__(self,f,dim:int=3, max_iter:int = 50, dx:float =np.array([0.01, 0.01]), alpha:float = 0.1):
+    def __init__(self,f,dim:int=2, max_iter:int = 50, dx:float =np.array([0.01, 0.01]), alpha:float = 0.1):
         self.f = f
         self.dim = dim
         self.max_iter = max_iter
